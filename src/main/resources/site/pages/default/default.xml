@@ -1,0 +1,8 @@
+<page>
+  <display-name i18n="pages.default.display-name">Standard sidemal</display-name>
+  <description i18n="pages.default.description">Sidemal hvor man kan legge inn layouts, parts eller innebygde komponenter fra Enonic</description>
+  <form/>
+  <regions>
+    <region name="main"/>
+  </regions>
+</page>
