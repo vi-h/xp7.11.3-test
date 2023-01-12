@@ -5,7 +5,9 @@
   "license": "UNLICENSED",
   "author": "Bouvet",
   "scripts": {
-    "build": "babel src/main/resources --out-dir=build/resources/main --ignore \"**/*.js\",\"**/*.jsx\""
+    "build": "concurrently \"npm-run-all build:*\"",
+    "build:js": "babel src/main/resources --out-dir=build/resources/main --ignore \"**/*.js\",\"**/*.jsx\"",
+    "lint": "eslint --ext=js --ext=es6 ./src/main/resources > ./build/lint-results/backend-lint-result"
   },
   "dependencies": {
     "mark.js": "8.11.1",
